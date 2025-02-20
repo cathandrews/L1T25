@@ -1,0 +1,1138 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Feeling+Passionate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+/* Variables */
+/* Global Styles */
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #7facae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  text-align: center;
+  flex: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: #618cab;
+}
+
+/* Horizontal Rule Styles */
+hr {
+  border: 0;
+  height: 1px;
+  background: #523241;
+}
+
+/* Main Content Styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+main h1 {
+  margin-bottom: 10px;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+  color: #669e2e;
+}
+
+h1 {
+  color: #618cab;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+h2 {
+  color: #669e2e;
+}
+
+h3 {
+  color: #618cab;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  box-shadow: none;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  border: 1px solid #523241;
+  border-radius: 4px;
+}
+
+form textarea {
+  height: 10rem;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: #618cab;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4b728e;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #7facae;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .column-3 {
+  background-color: #7facae;
+  box-shadow: none;
+}
+
+.column {
+  flex: 1;
+  padding: 0;
+  text-align: center;
+}
+
+.column-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.column-1 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 3rem;
+  margin: 0 0.5rem;
+}
+
+.column-2 p {
+  margin: 0.5rem 0;
+}
+
+.column-2 i {
+  margin-right: 0.5rem;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+
+/* Logo Styles */
+.logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Header Heading Styles */
+.header-heading {
+  display: flex;
+  align-items: center;
+  font-family: "Devonshire", cursive;
+  font-size: 8rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 0 1rem;
+}
+
+.succulents {
+  margin-right: 1rem;
+}
+
+.sublime {
+  margin-left: 1rem;
+}
+
+/* Image Circle Styles */
+.image-circles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style for individual image circles */
+.image-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+}
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Save, Like, and Hide Button Styles */
+.save-btn,
+.like-btn,
+.hide-btn {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  opacity: 0.8;
+}
+.save-btn:hover,
+.like-btn:hover,
+.hide-btn:hover {
+  background-color: #618cab;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Container for Save, Like, and Hide Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Ensure buttons are displayed side by side in the slideshow */
+.slideshow-container .panel .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* Adjust the gap as needed */
+}
+
+/* Profile Circle Styles */
+.profile-circle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Home Page Styles */
+body.home-page main .home-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+body.home-page main .column-3 {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.home-page main .column-1-2 {
+  grid-column: span 2;
+}
+
+body.home-page main .why-grow-succulents {
+  grid-column: 2/span 2;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body.home-page h1 {
+  margin: 1rem 0;
+}
+
+body.home-page .about-me .profile-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Adjust Line Spacing for "Why Grow Succulents" Section */
+.about-succulents ul.uncentered-list {
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about-me .centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+body.home-page .about-me h1,
+body.home-page .why-grow-succulents h1 {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+
+body.home-page .why-grow-succulents p {
+  line-height: 1.6;
+}
+
+body.home-page .why-grow-succulents ul {
+  line-height: 1.6;
+}
+
+/* Responsive Design for Home Page */
+@media (max-width: 1200px) {
+  body.home-page main .home-columns {
+    grid-template-columns: 1fr;
+  }
+  body.home-page main .column-3,
+  body.home-page main .column-1-2,
+  body.home-page main .why-grow-succulents {
+    grid-column: span 1;
+  }
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-item img {
+    width: 100%;
+    height: auto;
+  }
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right,
+  .contact-left,
+  .contact-middle,
+  .contact-comments {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form-container {
+    max-width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  nav ul li a {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .image-circles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-circle {
+    width: 8rem;
+    height: 8rem;
+  }
+  .profile-circle {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+/* Succulent Types Heading Styles */
+.succulent-types-heading {
+  margin-bottom: 2rem;
+}
+
+/* Image Grid Styles */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Adjust grid layout for tablets */
+@media (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Adjust grid layout for mobile devices */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Adjust grid layout for smaller mobile devices */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.image-item {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item img {
+  width: 18vw;
+  height: 18vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Ensure the image container is responsive */
+.image-item .image-container {
+  width: 100%;
+  max-width: 192px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.image-item p {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #000000;
+}
+
+.image-item h3 {
+  color: #618cab;
+  text-decoration: none;
+  margin-bottom: 0.2rem;
+}
+
+.image-item h3 a {
+  color: green;
+  text-decoration: none;
+}
+
+.image-item h3 a:visited {
+  color: #000000;
+}
+
+.image-item h3 a:hover,
+.image-item h3 a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.image-item table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border: 1px solid #d3d3d3;
+}
+
+.image-item table,
+.image-item th,
+.image-item td {
+  border: 1px solid #d3d3d3;
+}
+
+.image-item th,
+.image-item td {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+/* Propagation Page Styles */
+body.propagation-page {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 2rem;
+}
+
+main#propagation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 6rem;
+}
+
+main#propagation-page h1 {
+  margin-bottom: 1rem;
+}
+
+main#propagation-page h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #669e2e;
+}
+
+main#propagation-page .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+main#propagation-page .panel {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main#propagation-page .number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+main#propagation-page .panel img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+main#propagation-page .panel p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.save-like-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Contact Page Styles */
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+}
+
+.contact-middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+}
+
+.contact-comments {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+}
+
+.contact-image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  width: 100%;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.checkbox-group-succulents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Comments Section Styles */
+#comments-section {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#comments-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#comments-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#comments-section form label {
+  font-weight: bold;
+}
+
+#comments-section form input,
+#comments-section form textarea {
+  padding: 0.5rem;
+  border: 1px solid #523241;
+  border-radius: 4px;
+}
+
+#comments-section form textarea {
+  height: 10rem;
+}
+
+#comments-section form button {
+  padding: 0.5rem;
+  background-color: #618cab;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#comments-section form button:hover {
+  background-color: #4b728e;
+}
+
+#comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.comment {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment h4 {
+  margin-bottom: 0.5rem;
+}
+
+.comment p {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #000000;
+}
+
+/* Save for Later Page Styles */
+body.save-for-later-body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 2rem;
+}
+
+main.save-for-later-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+main.save-for-later-page h1 {
+  margin-bottom: 2rem; /* Adjusted to match the spacing on other pages */
+}
+
+main.save-for-later-page p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.saved-items-container,
+.liked-items-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.saved-item,
+.liked-item {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.saved-item img,
+.liked-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.saved-item .remove-button,
+.liked-item .remove-button {
+  padding: 0.5rem 1rem;
+  background-color: #618cab;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.saved-item .remove-button:hover,
+.liked-item .remove-button:hover {
+  background-color: #4b728e;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right,
+  .contact-left,
+  .contact-middle,
+  .contact-comments {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form-container {
+    max-width: 100%;
+  }
+}
+.contact-middle h1 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-middle h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Dropdown Menu Styles */
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #618cab;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+/* White Button Style */
+.white-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #618cab;
+  border: 2px solid #618cab;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.white-button:hover {
+  background-color: #618cab;
+  color: #ffffff;
+}
+
+/* Show All Button Style */
+#show-all-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #618cab;
+  border: 2px solid #618cab;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#show-all-btn:hover {
+  background-color: #618cab;
+  color: #ffffff;
+}
+
+/* Center the slide on the page */
+main#propagation-page .panel.active-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 4rem 1rem;
+}
+
+/* Style for the "View as a Slide Show" button */
+#start-slideshow-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #618cab;
+  border: 2px solid #618cab;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+#start-slideshow-btn:hover {
+  background-color: #618cab;
+  color: #ffffff;
+}
+
+/* Style for slide controls */
+#slide-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  z-index: 11;
+}
+
+#slide-controls button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+#slide-controls button:hover {
+  background-color: #618cab;
+  color: #ffffff;
+}
+
+/* Slideshow Container Styles */
+.slideshow-container {
+  display: none;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  position: relative;
+  margin-top: 18rem;
+  margin-bottom: 18rem;
+}
+
+.slideshow-container .panel {
+  display: none;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slideshow-container .panel.active-slide {
+  display: block;
+}
+
+.slideshow-container .panel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slideshow-container .panel p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+/* Hide original steps when slideshow is active */
+.slideshow-active #propagation-steps {
+  display: none;
+}
+
+/* Show slideshow container when active */
+.slideshow-active #slideshow-container {
+  display: block;
+}
+
+/* Ensure the slideshow container stays below the button and above the footer */
+main#propagation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+main#propagation-page h1 {
+  margin-bottom: 1rem;
+}
+
+#start-slideshow-btn {
+  margin-bottom: 2rem;
+}
+
+/* Style for slide controls */
+#slide-controls {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+#slide-controls button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+#slide-controls button:hover {
+  background-color: #618cab;
+  color: #ffffff;
+}
+
+/* Save for Later Page Styles */
+body.save-for-later-body .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+body.save-for-later-body .remove-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+body.save-for-later-body .save-btn,
+body.save-for-later-body .like-btn,
+body.save-for-later-body .hide-btn {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
